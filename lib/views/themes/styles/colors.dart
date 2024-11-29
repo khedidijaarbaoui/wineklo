@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
+const veryLightOrangeColor = Color.fromRGBO(255, 225, 206,1);
 const lightOrangeColor = Color.fromRGBO(255, 166, 47,1);
 const darkOrangeColor = Color.fromRGBO(251, 109, 58,1);
 
 const textLightGrayColor = Color.fromRGBO(241, 241, 241, 1);// for text
-const lightGrayColor = Color.fromRGBO(246, 248, 250, 1);// for placeholders
+const lightGrayColor = Color.fromRGBO(212, 217, 223, 1);// for placeholders
 
 const darkGrayColor = Color.fromRGBO(137, 138, 141, 1);//for text
 
