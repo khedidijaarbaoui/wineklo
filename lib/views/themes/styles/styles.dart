@@ -27,31 +27,32 @@ const TextStyle placeholderTextStyle = TextStyle(
   fontFamily: 'Sen',
   fontSize: 14.0,
   fontWeight: FontWeight.w400,
-  color: textLightGrayColor,
+  color: lightGrayColor,
 );
 
 const TextStyle buttonTextStyle = TextStyle(
   fontFamily: 'Sen',
-  fontSize: 18.0,
-  fontWeight: FontWeight.w700,
+  fontWeight: FontWeight.w500,
+  fontSize: 16,
   color: whiteColor,
 );
 
 // **Button Styles**
 final ButtonStyle primaryButtonStyle = ElevatedButton.styleFrom(
   textStyle: buttonTextStyle,
-  backgroundColor: darkOrangeColor, // Background color
+  backgroundColor: lightOrangeColor, // Background color
   foregroundColor: whiteColor, // Text color
-  padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+  padding: const EdgeInsets.symmetric(horizontal: 140.0, vertical: 25.0),
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(8.0),
   ),
 );
 
 final ButtonStyle secondaryButtonStyle = OutlinedButton.styleFrom(
-  textStyle: buttonTextStyle.copyWith(color: darkOrangeColor),
-  side: const BorderSide(color: darkOrangeColor, width: 1.5),
-  padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+  textStyle: buttonTextStyle,
+  foregroundColor: blackColor,
+  side: const BorderSide(color: blackColor, width: 1),
+  padding: const EdgeInsets.symmetric(horizontal: 140.0, vertical: 25.0),
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(8.0),
   ),
@@ -86,3 +87,4 @@ const Divider defaultDivider = Divider(
   thickness: 1.0,
   color: lightGrayColor,
 );
+
