@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AnimatedSplashScreen extends StatefulWidget {
-  const AnimatedSplashScreen({Key? key}) : super(key: key);
+  const AnimatedSplashScreen({super.key});
 
   @override
   State<AnimatedSplashScreen> createState() => _AnimatedSplashScreenState();
@@ -22,8 +22,8 @@ class _AnimatedSplashScreenState extends State<AnimatedSplashScreen> {
       child: Container(
         width: 200,
         height: 200,
-        decoration: BoxDecoration(
-          image: const DecorationImage(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
             image: AssetImage('assets/images/logo.png'),
             fit: BoxFit.contain,
           ),

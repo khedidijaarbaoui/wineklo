@@ -6,7 +6,7 @@ import '/views/screens/onBoarding/onBoardingData.dart';
 class OnboardingWidget extends StatelessWidget {
   final OnboardingItem item;
 
-  const OnboardingWidget({Key? key, required this.item}) : super(key: key);
+  const OnboardingWidget({super.key, required this.item});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class OnboardingWidget extends StatelessWidget {
         // Title
         Text(
           item.title,
-          style: headlineStyle.copyWith(color: blackColor),
+          style: blackHeadlineStyle.copyWith(color: blackColor),
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 15),
@@ -36,7 +36,7 @@ class OnboardingWidget extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: Text(
             item.subtitle,
-            style: bodyTextStyle.copyWith(color: darkGrayColor),
+            style: grayBodyTextStyle.copyWith(color: darkGrayColor),
             textAlign: TextAlign.center,
           ),
         ),

@@ -1,31 +1,16 @@
 import 'package:flutter/material.dart';
-import 'views/themes/styles/theme.dart';
-import 'commons/config.dart';
-import '/views/screens/onBoarding/onBoardingPage.dart';
-import '/views/screens/homescreen/HomeScreen.dart';
-import '/views/screens/onBoarding/AnimatedSplash.dart';
+import 'package:wineklo/views/screens/food_managment/restaunavbar.dart';
 
-
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  //await my_init_app();  // Initialize app setup if any
-  runApp(const MainApp());
+void main() {
+  runApp(MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: APP_NAME,
-      theme: THEME_DATA,
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const AnimatedSplashScreen(),
-        '/onboarding': (context) => const OnboardingPage(),
-        '/home': (context) => const HomeScreen(),
-      },
+      debugShowCheckedModeBanner: false,
+      home: userNavBar(), // Set the navigation bar as the home screen
     );
   }
 }

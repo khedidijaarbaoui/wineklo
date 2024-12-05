@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 
 // **Text Styles**
+const TextStyle blackHeadlineStyle = TextStyle(
+  fontFamily: 'Sen',
+  fontSize: 24.0,
+  fontWeight: FontWeight.bold,
+  color: blackColor,
+);
+
 const TextStyle headlineStyle = TextStyle(
   fontFamily: 'Sen',
   fontSize: 24.0,
@@ -16,7 +23,59 @@ const TextStyle subheadingStyle = TextStyle(
   color: darkOrangeColor,
 );
 
+const TextStyle blackSubHeadlineStyle = TextStyle(
+  fontFamily: 'Sen',
+  fontSize: 18.0,
+  fontWeight: FontWeight.bold,
+  color: blackColor,
+);
+
+
+const TextStyle whiteHeadlineStyle = TextStyle(
+  fontFamily: 'Sen',
+  fontSize: 24.0,
+  fontWeight: FontWeight.bold,
+  color: whiteColor,
+);
+
+const TextStyle orangeSubheadingStyle = TextStyle(
+  fontFamily: 'Sen',
+  fontSize: 18.0,
+  fontWeight: FontWeight.w400,
+  color: darkOrangeColor,
+);
+
+const TextStyle whiteSubheadingStyle = TextStyle(
+  fontFamily: 'Sen',
+  fontSize: 18.0,
+  fontWeight: FontWeight.w400,
+  color: whiteColor,
+);
+
 const TextStyle bodyTextStyle = TextStyle(
+  fontFamily: 'Sen',
+  fontSize: 16.0,
+  fontWeight: FontWeight.normal,
+  color: darkGrayColor,
+);
+
+
+
+const TextStyle blackBodyTextStyle = TextStyle(
+  fontFamily: 'Sen',
+  fontSize: 16.0,
+  fontWeight: FontWeight.normal,
+  color: blackColor,
+);
+
+const TextStyle orangeBodyTextStyle = TextStyle(
+  fontFamily: 'Sen',
+  fontSize: 16.0,
+  fontWeight: FontWeight.normal,
+  color: darkOrangeColor,
+);
+
+const TextStyle grayBodyTextStyle = TextStyle(
   fontFamily: 'Sen',
   fontSize: 16.0,
   fontWeight: FontWeight.normal,
@@ -42,7 +101,7 @@ final ButtonStyle primaryButtonStyle = ElevatedButton.styleFrom(
   textStyle: buttonTextStyle,
   backgroundColor: lightOrangeColor, // Background color
   foregroundColor: whiteColor, // Text color
-  padding: const EdgeInsets.symmetric(horizontal: 140.0, vertical: 25.0),
+  padding: const EdgeInsets.symmetric(horizontal: 5.0, vertical: 5.0),
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(8.0),
   ),

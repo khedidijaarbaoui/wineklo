@@ -4,7 +4,7 @@ import '/views/widgets/onBoarding.dart';
 import '/views/themes/styles/colors.dart';
 
 class OnboardingPage extends StatefulWidget {
-  const OnboardingPage({Key? key}) : super(key: key);
+  const OnboardingPage({super.key});
 
   @override
   State<OnboardingPage> createState() => _OnboardingPageState();
@@ -73,7 +73,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 ),
               ),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 10), // Space between "Next" and "Skip"
             // "Skip" button
             if (_currentIndex < onboardingItems.length - 1)
               TextButton(
